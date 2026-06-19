@@ -66,6 +66,17 @@ typedef struct MEM
     int DATA_BUS;
 }MEM;
 
+typedef struct STACK
+{
+    PROGRAM_COUNTER PC;
+    uint16_t L1;
+    uint16_t L2;
+    uint16_t L3;
+    uint8_t SP;
+     
+}STACK;
+
+
 int IR = 0x0;
 PROGRAM_COUNTER PC = {0};
 uint16_t SRC_REG = 0x0;
